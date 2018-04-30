@@ -5,6 +5,7 @@
 
 import QtQuick 2.0
 import SddmComponents 2.0
+import QtQuick.VirtualKeyboard 2.1
 
 Rectangle {
   id  : amadeus_root
@@ -26,6 +27,12 @@ Rectangle {
   }
 
   TextConstants { id: textConstants }
+
+  InputPanel {
+      id: inputPanel
+      active: false
+      visible: false
+  }
 
   Connections {
     target: sddm
