@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Name=amadeus
+Description=Amadeus styled theme
+Author=Michał Szczepaniak
+Copyright=(c) 2018, Michał Szczepaniak
+License=WTFPL
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/Michal-Szczepaniak
+Screenshot=amadeus-background.png
+MainScript=Main.qml
+Theme-Id=amadeus
+Theme-API=2.0
