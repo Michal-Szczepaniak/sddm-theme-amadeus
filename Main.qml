@@ -5,6 +5,7 @@
 
 import QtQuick 2.0
 import SddmComponents 2.0
+import "./components"
 import QtQuick.VirtualKeyboard 2.1
 
 Rectangle {
@@ -22,8 +23,8 @@ Rectangle {
   }
 
   FontLoader {
-    id: opensans_cond_light
-    source: "fonts/OpenSans_CondLight.ttf"
+    id: takao_mincho
+    source: "fonts/TakaoMincho.ttf"
   }
 
   TextConstants { id: textConstants }
@@ -72,10 +73,10 @@ Rectangle {
   TextBox {
     id: amadeus_username
 
-    x: 677/amadeus_root.scalingX + diffX
-    y: 630/amadeus_root.scalingY + diffY
+    x: 683/amadeus_root.scalingX + diffX
+    y: 633/amadeus_root.scalingY + diffY
 
-    width: 571/amadeus_root.scalingX
+    width: 565/amadeus_root.scalingX
     height: 46/amadeus_root.scalingY
 
     color: "black"
@@ -84,20 +85,24 @@ Rectangle {
     hoverColor: "#000"
     textColor: "#f7d65d"
 
-    font.family: opensans_cond_light.name
-    font.pixelSize: 20
+    font.family: takao_mincho.name
+    font.pixelSize: 27
+    font.letterSpacing: 1.4
+    font.bold: true
 
     KeyNavigation.tab: amadeus_password
   }
 
-  PasswordBox {
+  SpTextBox {
     id: amadeus_password
 
-    x: 677/amadeus_root.scalingX + diffX
-    y: 698/amadeus_root.scalingY + diffY
+    x: 688/amadeus_root.scalingX + diffX
+    y: 699/amadeus_root.scalingY + diffY
 
-    width: 571/amadeus_root.scalingX
+    width: 560/amadeus_root.scalingX
     height: 46/amadeus_root.scalingY
+
+    echoMode: TextInput.Password
 
     color: "black"
     borderColor: "black"
@@ -105,8 +110,8 @@ Rectangle {
     hoverColor: "#000"
     textColor: "#f7d65d"
 
-    font.family: opensans_cond_light.name
-    font.pixelSize: 20
+    font.family: takao_mincho.name
+    font.pixelSize: 27
 
     KeyNavigation.tab: amadeus_login
     KeyNavigation.backtab: amadeus_username
