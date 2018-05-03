@@ -14,6 +14,7 @@ Rectangle {
   property var scalingY: 1080/bg.paintedHeight
   property var diffX: (amadeus_root.width - bg.paintedWidth)/2
   property var diffY: (amadeus_root.height - bg.paintedHeight)/2
+  property var inputColor: "#f7d65d"
 
   signal tryLogin()
 
@@ -76,7 +77,7 @@ Rectangle {
     borderColor: "black"
     focusColor: "#000"
     hoverColor: "#000"
-    textColor: "#f7d65d"
+    textColor: inputColor
 
     font.family: takao_mincho.name
     font.pixelSize: 27
@@ -101,7 +102,7 @@ Rectangle {
     borderColor: "black"
     focusColor: "#000"
     hoverColor: "#000"
-    textColor: "#f7d65d"
+    textColor: inputColor
 
     font.family: takao_mincho.name
     font.pixelSize: 27
