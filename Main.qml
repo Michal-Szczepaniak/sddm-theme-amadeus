@@ -15,7 +15,7 @@ Rectangle {
   property var diffX: (amadeus_root.width - bg.paintedWidth)/2
   property var diffY: (amadeus_root.height - bg.paintedHeight)/2
   property var inputColor: "#debf54"
-  property var glow: "#66debf54"
+  property var glow: "#60e6b656"
 
   signal tryLogin()
 
