@@ -23,6 +23,7 @@
 ***************************************************************************/
 
 import QtQuick 2.0
+import QtGraphicalEffects 1.0
 
 FocusScope {
     id: container
@@ -32,6 +33,7 @@ FocusScope {
     property color borderColor: "#ababab"
     property color focusColor: "#266294"
     property color hoverColor: "#5692c4"
+    property color glowColor: "#5692c4"
     property alias radius: main.radius
     property alias font: txtMain.font
     property alias textColor: txtMain.color
@@ -85,5 +87,13 @@ FocusScope {
         focus: true
 
         passwordCharacter: "*"//"\u25cf"
+    }
+
+    Glow {
+        anchors.fill: txtMain
+        radius: 16
+        samples: 33
+        color: glowColor
+        source: txtMain
     }
 }

@@ -15,6 +15,7 @@ Rectangle {
   property var diffX: (amadeus_root.width - bg.paintedWidth)/2
   property var diffY: (amadeus_root.height - bg.paintedHeight)/2
   property var inputColor: "#f7d65d"
+  property var glow: "#66f7d65d"
 
   signal tryLogin()
 
@@ -64,7 +65,7 @@ Rectangle {
     smooth: true
   }
 
-  TextBox {
+  SpTextBox {
     id: amadeus_username
 
     x: 683/amadeus_root.scalingX + diffX
@@ -78,6 +79,7 @@ Rectangle {
     focusColor: "#000"
     hoverColor: "#000"
     textColor: inputColor
+    glowColor: glow
 
     font.family: takao_mincho.name
     font.pixelSize: 27
@@ -103,6 +105,7 @@ Rectangle {
     focusColor: "#000"
     hoverColor: "#000"
     textColor: inputColor
+    glowColor: glow
 
     font.family: takao_mincho.name
     font.pixelSize: 27
