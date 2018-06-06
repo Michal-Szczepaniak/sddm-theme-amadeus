@@ -90,7 +90,7 @@ Rectangle {
     glowColor: glow
 
     font.family: takao_mincho.name
-    font.pixelSize: 27
+    font.pixelSize: 27/amadeus_root.scalingY
     font.letterSpacing: 1.4
     font.bold: true
 
@@ -116,7 +116,7 @@ Rectangle {
     glowColor: glow
 
     font.family: takao_mincho.name
-    font.pixelSize: 27
+    font.pixelSize: 27/amadeus_root.scalingY
 
     KeyNavigation.tab: amadeus_login
     KeyNavigation.backtab: amadeus_username
