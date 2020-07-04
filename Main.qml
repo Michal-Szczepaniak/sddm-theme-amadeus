@@ -79,8 +79,8 @@ Rectangle {
     x: 683/amadeus_root.scalingX + diffX
     y: 633/amadeus_root.scalingY + diffY
 
-    width: 565/amadeus_root.scalingX
-    height: 46/amadeus_root.scalingY
+    width: 560/amadeus_root.scalingX
+    height: 42/amadeus_root.scalingY
 
     color: "black"
     borderColor: "black"
@@ -100,7 +100,7 @@ Rectangle {
   SpTextBox {
     id: amadeus_password
 
-    x: 688/amadeus_root.scalingX + diffX
+    x: 683/amadeus_root.scalingX + diffX
     y: 699/amadeus_root.scalingY + diffY
 
     width: 560/amadeus_root.scalingX
