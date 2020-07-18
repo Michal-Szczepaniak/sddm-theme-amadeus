@@ -1,11 +1,15 @@
-Amadeus Theme for SDDM
+# Amadeus Theme for SDDM
 
-INSTALL:
+## INSTALL:
 	Copy this folder to /usr/share/sddm/themes/ or to similar path with SDDM themes and apply.
 
-[WIKI](https://github.com/Michal-Szczepaniak/sddm-theme-amadeus/wiki)
+## [WIKI](https://github.com/Michal-Szczepaniak/sddm-theme-amadeus/wiki)
 
-LICENSE:
+## Thanks to contributors:
+* kisaragi-hiu
+* pmdevita
+
+## LICENSE:
 	Read  COPYING
 
 	TakaoMincho font is taken from https://launchpad.net/takao-fonts
