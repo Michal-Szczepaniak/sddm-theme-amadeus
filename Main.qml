@@ -16,7 +16,7 @@ Rectangle {
   property var diffY: (amadeus_root.height - bg.paintedHeight)/2
   property var inputColor: "#debf54"
   property var glow: "#60e6b656"
-  property bool isPrimary: (config.MirrorScreens !== "false") || primaryScreen
+  property bool isPrimary: (config.MirrorScreens === "true") || primaryScreen
 
   signal tryLogin()
 

@@ -20,4 +20,4 @@ For optional virtual keyboard support, install Qt Virtual Keyboard and [enable i
 
 The theme folder contains a `theme.conf` file with the following options
 
-- `MirrorScreens` (Default: false) If true, this will display the login dialogue on all monitors. If false, it will only display on the primary monitor.
+- `MirrorScreens` (Default: true) If true, this will display the login dialogue on all monitors. If false, it will only display on the primary monitor.
