@@ -1,7 +1,7 @@
 # Amadeus Theme for SDDM
 
 ## INSTALL:
-	Copy this folder to /usr/share/sddm/themes/ or to similar path with SDDM themes and apply. You will also need the Qt Graphical Effects module installed.
+Copy this folder to /usr/share/sddm/themes/ or to similar path with SDDM themes and apply. You will also need the Qt Graphical Effects module installed.
 	
 For optional virtual keyboard support, install Qt Virtual Keyboard and [enable it in your SDDM config.](https://wiki.archlinux.org/index.php/SDDM#Enable_virtual_keyboard)
 
@@ -15,3 +15,9 @@ For optional virtual keyboard support, install Qt Virtual Keyboard and [enable i
 	Read  COPYING
 
 	TakaoMincho font is taken from https://launchpad.net/takao-fonts
+	
+## CONFIGURATION:
+
+The theme folder contains a `theme.conf` file with the following options
+
+- `MirrorScreens` (Default: true) If true, this will display the login dialogue on all monitors. If false, it will only display on the primary monitor.

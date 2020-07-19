@@ -16,6 +16,7 @@ Rectangle {
   property var diffY: (amadeus_root.height - bg.paintedHeight)/2
   property var inputColor: "#debf54"
   property var glow: "#60e6b656"
+  property bool isPrimary: (config.MirrorScreens === "true") || primaryScreen
 
   signal tryLogin()
 
@@ -63,7 +64,7 @@ Rectangle {
   Image {
     id: bg
     anchors.fill: parent
-    source: "amadeus-background.png"
+    source: isPrimary ? "amadeus-background.png" : "amadeus-secondary.png"
     fillMode: Image.PreserveAspectFit
 
     clip: true
@@ -80,6 +81,7 @@ Rectangle {
     width: 560/amadeus_root.scalingX
     height: 42/amadeus_root.scalingY
 
+    visible: isPrimary
     color: "black"
     borderColor: "black"
     focusColor: "#000"
@@ -106,6 +108,7 @@ Rectangle {
 
     echoMode: TextInput.Password
 
+    visible: isPrimary
     color: "black"
     borderColor: "black"
     focusColor: "#000"
